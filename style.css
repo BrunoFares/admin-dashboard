@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img.icon {
+    height: 100px;
+}
+
+body {
+    display: grid;
+    grid-template: 30% 70% / 30% 70%;
+}
+
+div.dashboard {
+    grid-column-start: 1;
+    grid-row: 1 / -1;
+}
+
+div.header {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+div.main-content {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
