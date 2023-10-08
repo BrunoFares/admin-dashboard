@@ -4,18 +4,21 @@
 }
 
 img.icon {
-    height: 60px;
-    margin: 5px;
+    height: 2.5rem;
+    margin: 0.3rem;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(113deg) brightness(103%) contrast(102%);
 }
 
 body {
     display: grid;
-    grid-template: 30% 70% / 30% 70%;
+    grid-template: 30% 70% / 22rem auto;
 }
 
 div.dashboard {
     grid-column-start: 1;
     grid-row: 1 / -1;
+    background-color: rgb(160, 46, 46);
+    color: white;
 }
 
 div.header {
@@ -32,4 +35,22 @@ ul li {
     display: flex;
     align-items: center;
     font-weight: 700;
+}
+
+ul li p {
+    margin-left: 0.7rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.dash-head ul {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.dash-head img {
+    height: 3.7rem;
 }
