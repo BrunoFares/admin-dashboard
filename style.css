@@ -62,6 +62,7 @@ div.header {
     display: flex;
     flex-direction: column;
     font-weight: 700;
+    padding-top: 0.5rem;
 }
 
 div.header.top,
@@ -99,4 +100,15 @@ div.header.bottom div {
     display: flex;
     align-items: center;
     flex-direction: row;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    margin: 0 3%;
+    border-radius: 1.5rem;
+    background-color: rgb(160, 46, 46);
+    color: white;
+    font-weight: 700;
+    border: 0;
+    font-size: 1rem;
 }
