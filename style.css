@@ -54,3 +54,13 @@ ul {
 .dash-head img {
     height: 3.7rem;
 }
+
+div.header {
+    display: flex;
+    flex-direction: column;
+}
+
+div.header.top,
+div.header.bottom {
+    flex-direction: row;
+}
