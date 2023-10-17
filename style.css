@@ -14,7 +14,7 @@ div.dashboard img.icon {
 
 body {
     display: grid;
-    grid-template: 30% 70% / 22rem auto;
+    grid-template: auto auto / 22rem auto;
 }
 
 div.dashboard {
@@ -62,7 +62,7 @@ div.header {
     display: flex;
     flex-direction: column;
     font-weight: 700;
-    padding-top: 0.5rem;
+    padding: 1rem 0;
 }
 
 div.header.top,
@@ -102,6 +102,23 @@ div.header.bottom div {
     flex-direction: row;
 }
 
+div.header.top div:first-of-type {
+    flex: 1 1 70%;
+}
+
+div.header.top div:nth-of-type(2) {
+    flex: 1 1 30%;
+}
+
+div.header.bottom div:first-of-type {
+    flex: 1 1 70%;
+}
+
+div.header.bottom div:nth-of-type(2) {
+    flex: 1 1 30%;
+    padding: 0 2rem;
+}
+
 button {
     padding: 0.5rem 1.5rem;
     margin: 0 3%;
@@ -121,4 +138,5 @@ input {
     font-size: 1.3rem;
     color: rgb(33, 33, 33);
     padding-left: 1rem;
+    width: 70%;
 }
