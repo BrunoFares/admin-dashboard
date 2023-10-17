@@ -28,7 +28,7 @@ body {
 div.dashboard {
     grid-column-start: 1;
     grid-row: 1 / -1;
-    background-color: rgb(160, 46, 46);
+    background-color: rgb(150, 0, 0);
     color: white;
 }
 
@@ -133,7 +133,7 @@ button {
     padding: 0.8rem 7%;
     margin: 0 3%;
     border-radius: 1.5rem;
-    background-color: rgb(160, 46, 46);
+    background-color: rgb(150, 0, 0);
     color: white;
     font-weight: 700;
     border: 0;
@@ -149,4 +149,62 @@ input {
     color: rgb(33, 33, 33);
     padding-left: 1rem;
     width: 70%;
+}
+
+div.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(209, 209, 209);
+    padding: 1.3rem 1.3rem 5rem;
+}
+
+div.your-projects {
+    flex: 1 1 50rem;
+}
+
+div.project-grid {
+    display: grid;
+    grid-template: repeat(3, 21rem) / repeat(auto-fill, 30rem);
+    gap: 1rem;
+    justify-content: center;
+}
+
+div.side-stuff {
+    flex: 1 1 5rem;
+}
+
+div.card {
+    background-color: white;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: inset 10px 0 rgb(150, 0, 0);
+    padding: 20px;
+}
+
+h2 {
+    padding: 1.5rem 0.5rem 1.5rem;
+}
+
+div.main-content p {
+    padding: 0 1rem;
+    color: rgb(65, 65, 65);
+}
+
+div.list {
+    background-color: white;
+}
+
+div.card img {
+    position: relative;
+    left: 68%;
+    bottom: -20%;
+}
+
+div.header img.icon,
+div.main-content img.icon {
+    height: 2rem; 
+}
+
+h1 {
+    padding: 20px;
 }
