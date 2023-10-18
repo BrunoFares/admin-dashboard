@@ -170,7 +170,7 @@ div.project-grid {
 }
 
 div.side-stuff {
-    flex: 1 1 5rem;
+    flex: 1 1 15rem;
 }
 
 div.card {
@@ -183,6 +183,10 @@ div.card {
 
 h2 {
     padding: 1.5rem 0.5rem 1.5rem;
+}
+
+div.announcements.list div:first-of-type h2 {
+    padding: 0 0.5rem 1.5rem;
 }
 
 div.main-content p {
@@ -207,4 +211,13 @@ div.main-content img.icon {
 
 h1 {
     padding: 20px;
+}
+
+div.list {
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+hr {
+    margin: 1.5rem 0 0;
 }
