@@ -35,11 +35,19 @@ div.dashboard {
 div.header {
     grid-column-start: 2;
     grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    padding: 1rem 0;
 }
 
 div.main-content {
     grid-column-start: 2;
     grid-row-start: 2;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(209, 209, 209);
+    padding: 1.3rem 1.3rem 5rem;
 }
 
 ul li {
@@ -67,13 +75,6 @@ ul {
     height: 3.7rem;
 }
 
-div.header {
-    display: flex;
-    flex-direction: column;
-    font-weight: 700;
-    padding: 1rem 0;
-}
-
 div.header.top,
 div.header.bottom {
     flex-direction: row;
@@ -83,6 +84,9 @@ div.header.top div,
 div.header.bottom div {
     flex: 1;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 img.pfp {
@@ -105,24 +109,14 @@ div.header.bottom p:nth-of-type(2) {
     font-size: 170%;
 }
 
-div.header.top div,
-div.header.bottom div {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-div.header.top div:first-of-type {
+div.header.top div:first-of-type,
+div.header.bottom div:first-of-type {
     flex: 1 1 70%;
 }
 
 div.header.top div:nth-of-type(2) {
     flex: 1 1 30%;
     font-size: 140%;
-}
-
-div.header.bottom div:first-of-type {
-    flex: 1 1 70%;
 }
 
 div.header.bottom div:nth-of-type(2) {
@@ -150,13 +144,6 @@ input {
     color: rgb(33, 33, 33);
     padding-left: 1rem;
     width: 70%;
-}
-
-div.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(209, 209, 209);
-    padding: 1.3rem 1.3rem 5rem;
 }
 
 div.your-projects {
@@ -195,10 +182,6 @@ div.main-content p {
     color: rgb(65, 65, 65);
 }
 
-div.list {
-    background-color: white;
-}
-
 div.card img {
     position: relative;
     left: 68%;
@@ -217,6 +200,7 @@ h1 {
 div.list {
     padding: 2rem;
     border-radius: 0.8rem;
+    background-color: white;
 }
 
 hr {
